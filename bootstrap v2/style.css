@@ -1,0 +1,30 @@
+html{
+    font-family: sans-serif;
+}
+#menu_bouton
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(images/image1.jpg) no-repeat ;
+    background-size: 100%;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background-position: center;
+    
+   
+    
+    
+
+}
+#foot1
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(images/image2.jpg) no-repeat;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-position: center;
+    
+}
+.shadows
+{
+    text-shadow: 2px 2px 4px black;
+}
+
