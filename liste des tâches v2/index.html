@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liste des tâches</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="">
+            <nav class="navbar navbar-light bg-light">
+                <a class="navbar-brand ml-auto" href="#">Navbar</a>
+            </nav>
+        </div>
+
+    </header>
+    <section class="container">
+        <div class="row mb-5"></div>
+
+        <div class="rounded pl-2 pr-2">
+            <div class="row mb-5"></div>
+            <div class="row mb-5">
+                <div class="col col-md-6 offset-md-3 text-center">
+                    <h1>Liste De Vos Tâches</h1>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Entrer votre tâche</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div>
+                <p>Priorité :</p>
+            </div>
+
+            <div class="form-check ">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class=" text-danger form-check-label" for="defaultCheck1">
+                    Tâche Urgente<i class="fas fa-exclamation-triangle ml-2 "></i>
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-10 mb-5">
+                    <button type="button" class="btn btn-info">Ajouter à la Liste</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="container mt-5 ">
+        <div class="row border pt-3 mr-1 ml-1 rounded">
+            <div class="col-1">
+                <p class="text-center">Priorité</p>
+            </div>
+            <div class="col-10">
+                <p class="text-center">Liste des Tâches</p>
+            </div>
+            <div class="col-1">
+                <p class="text-center">Effectuer</p>
+            </div>
+        </div>
+        <ul class="list-group mr-1 ml-1">
+            <li class="list-group-item disabled d-flex justify-content-between" aria-disabled="true"><span
+                    class="text-danger">
+                    <i class="fas fa-exclamation-triangle ml-2"></i></span><del> Cras justo odio</del>
+               <span class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+               </span>
+
+
+            </li>
+            <li class="list-group-item disabled d-flex justify-content-between" aria-disabled="true"><span
+                class="text-danger">
+                <i class="fas fa-exclamation-triangle ml-2"></i></span><del> Cras justo odio</del>
+           <span class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+
+           </span>
+
+
+        </li>
+
+        </ul>
+
+
+
+
+
+    </section>
+
+
+    <footer class="container mt-2">
+
+        <div class="row mt-5">
+            <div class="col-md-2 offset-md-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>
