@@ -24,35 +24,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+    <script src="tache.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 
 </head>
 
-<body>
+<body class="body1">
 
-    <header>
-        <div class="">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand ml-auto" href="#">Navbar</a>
+    <header class="container">
+        <div>
+            <nav class="navigation navbar navbar-light  shadow p-3 mb-5 rounded">
+                <img src="images/logo.png" alt="logo" style="width: 3%;" class="ml-2">
+                <a class="navbar-brand ml-auto font-weight-bold" href="#">Home</a>
             </nav>
         </div>
 
     </header>
     <section class="container">
-        <div class="row mb-5"></div>
+        <div class="row mb-2"></div>
 
-        <div class="rounded pl-2 pr-2">
-            <div class="row mb-5"></div>
-            <div class="row mb-5">
-                <div class="col col-md-6 offset-md-3 text-center">
-                    <h1>Liste De Vos Tâches</h1>
+        <div class="rounded pl-2 pr-2   shadow p-2 mb-4  encadrer">
+            <div class="row mb-2"></div>
+            <div class="row mb-2">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h1 class="text-info font-weight-bold">Liste De Vos Tâches</h1>
                 </div>
             </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
+            <div class="input-group mb-3 ">
+                <div class="input-group-prepend ">
                     <span class="input-group-text" id="inputGroup-sizing-default">Entrer votre tâche</span>
                 </div>
-                <input type="text" class="form-control" aria-label="Sizing example input"
+                <input type="text" class="form-control text_input" aria-label="Sizing example input"
                     aria-describedby="inputGroup-sizing-default">
             </div>
             <div>
@@ -60,14 +64,14 @@
             </div>
 
             <div class="form-check ">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <input class="form-check-input " type="checkbox"  name="urgent" value="" id="defaultCheck1">
                 <label class=" text-danger form-check-label" for="defaultCheck1">
                     Tâche Urgente<i class="fas fa-exclamation-triangle ml-2 "></i>
                 </label>
             </div>
             <div class="row">
-                <div class="col-md-2 offset-10 mb-5">
-                    <button type="button" class="btn btn-info">Ajouter à la Liste</button>
+                <div class="col-md-2 offset-10 mb-2 ">
+                    <button type="button" class="btn btn-info ajouter">Ajouter à la Liste</button>
                 </div>
             </div>
         </div>
@@ -75,39 +79,35 @@
     </section>
 
 
-    <section class="container mt-5 ">
-        <div class="row border pt-3 mr-1 ml-1 rounded">
+    <section class="container  ">
+        <div class="row listefait  pt-4 mr-1 ml-1 border shadow p-2 mb-0  rounded">
             <div class="col-1">
-                <p class="text-center">Priorité</p>
+                <p class="text-center font-weight-bold ">Priorité</p>
             </div>
             <div class="col-10">
-                <p class="text-center">Liste des Tâches</p>
+                <p class="text-center font-weight-bold">Liste des Tâches</p>
             </div>
             <div class="col-1">
-                <p class="text-center">Effectuer</p>
+                <p class="text-center font-weight-bold">Effectuer</p>
             </div>
         </div>
-        <ul class="list-group mr-1 ml-1">
-            <li class="list-group-item disabled d-flex justify-content-between" aria-disabled="true"><span
-                    class="text-danger">
-                    <i class="fas fa-exclamation-triangle ml-2"></i></span><del> Cras justo odio</del>
-               <span class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-
-               </span>
 
 
+        <ul class="list-group" id="listid">
+            
+            <li class="row list2 ml-1 mr-1 pt-1 pb-1 rounded list-unstyled align-items-center border border-dark">
+               
+                    <div class="col-1"><i class="fas fa-exclamation-triangle text-danger d-flex  justify-content-center align-items-center"> </i>
+                    </div>
+                    <div class="col text-center "><p class="text_barre"> Cras justo odio </p>
+                    </div>
+                    <div class="col-1 form-check d-flex  justify-content-center align-items-center"> 
+                       
+                        <input class="form-check-input" name="barre" type="checkbox" value="" id="defaultCheck2">
+                    
+                    </div>
+               
             </li>
-            <li class="list-group-item disabled d-flex justify-content-between" aria-disabled="true"><span
-                class="text-danger">
-                <i class="fas fa-exclamation-triangle ml-2"></i></span><del> Cras justo odio</del>
-           <span class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-
-           </span>
-
-
-        </li>
 
         </ul>
 
@@ -121,8 +121,8 @@
     <footer class="container mt-2">
 
         <div class="row mt-5">
-            <div class="col-md-2 offset-md-5">
-                <nav aria-label="Page navigation example">
+            <div class="col-md-2 offset-md-9">
+                <nav aria-label="Page navigation example ">
                     <ul class="pagination">
                         <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">

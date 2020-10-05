@@ -1,0 +1,26 @@
+.body1
+{
+    background-image: linear-gradient(120deg, #EAB543, #9AECDB); /*cadetblue; */
+    min-height:  100vh;
+}
+.navigation
+{
+    background-color: #FEA47F;/* rgb(240, 211, 174);*/
+}
+.encadrer
+{
+    background-color: #F8EFBA;/*rgb(235, 222, 206);  */
+}
+.listefait
+{
+    background-color:#CAD3C8;/*rgb(221, 203, 165);  */
+}
+
+.list2
+{
+    background-color:  #F8EFBA;
+}
+.text_barre
+{
+    text-decoration: none;
+}
