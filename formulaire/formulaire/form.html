@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    
+    <div class="form">
+        <header class="cadretitre">
+            <h1 class="titre">EVENT REGISTRATION FORM</h1>
+        </header>
+        <div class=ensembleform>
+            <aside class="aside">
+                <span>Name</span>
+                <span>Compagny</span>
+                <span>Email</span>
+                <span>Phone</span>
+                <span>Subject</span>
+                
+
+            </aside>
+            <form class="formulaire">
+                <div class="label1">
+                    <div class="colonne"><input type="text" id="Name" required size="26">
+                        <label  class="colortext" for="Name" >First Name</label></div>
+                    <div class="colonne">
+                        <input type="text" id="Last_name" required size="26">
+                        <label class="colortext" for="Last_Name">Last Name</label></div>
+
+
+                </div>
+                <div class="label2">
+
+                    <input type="text" id="Compagny" required size="57">
+                </div>
+                <div class="label3">
+
+                    <input type="text" id="Email" required size="57">
+                </div>
+                <div class="label4">
+                    <div class="colonne">
+                        <input type="text" id="Area_Code" required size="10">
+                        <label class="colortext" for="Area_Code">Area Code</label>
+                    </div>
+                    <div class="colonne">
+                        <input type="text" id="Phone_Number" required size="37">
+                        <label class="colortext" for="Phone_Number">Phone Number</label>
+                    </div>
+                </div>
+                <div class="label5">
+
+                    
+
+                    <select name="Choose" id="Choose">
+                        <option value="">Choose option</option>
+                        
+                    </select>
+
+
+                    </select>
+
+                </div>
+            </form>
+        </div>
+        <div class="question">
+            <span>Are you an existing customer?</span>
+            <div class="bouton">
+                <div class="radio">
+                    <input type="radio" id="first" name="choice"></input>
+                    <label for="first">Yes</label>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" id="second" name="choice"></input>
+                    <label for="second">No</label>
+                </div>
+            </div>
+            <div class="submit">
+                <p>REGISTER</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+
 </body>
+
 </html>

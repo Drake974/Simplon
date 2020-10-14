@@ -1,0 +1,142 @@
+
+body{
+    background:linear-gradient(to right top, #56afd8 30%, #b62ada 100%) no-repeat ;
+    min-height:  100vh;
+    
+}
+
+.form { 
+    margin: auto;
+    margin-top: 2%;
+    width : 45%;
+    height: 85vh;
+    border: 1px solid black;
+    border-radius: 1%;
+    background-color: white;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    background-color: black;
+  
+
+}
+.cadretitre {
+    
+
+background-color: black;
+padding-top: 4px;
+padding-bottom: 4px;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+.aside
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+
+}
+.formulaire
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-top: 5%;
+    
+}
+.ensembleform
+{
+    display: flex;
+    justify-content: center;
+}
+.colonne
+{
+    display: flex;
+    flex-direction: column;
+}
+.label1, .label4
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton
+{
+    display: flex;
+  
+}
+.submit
+{
+  background-color: red;
+  color: white;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+
+label {
+    
+    width: 120px;
+    padding: 10px;
+    
+ 
+    
+  }
+  
+  
+  /*
+  * Lorsqu'un input est :checked
+  * Cibler le label qui suit directement l'input
+  */
+  input:checked + label {
+   
+  }
+
+input, select
+{
+height: 30px;
+background-color: rgb(243, 242, 242);
+border-radius: 5px;
+border: none;
+margin-top: 5px;
+margin-bottom: 16px;
+}
+
+span{
+    margin-bottom: 36px;
+    margin-top: 25px;
+}
+#Name, #Last_name, #Area_Code, #Phone_Number {
+    margin-bottom: 0%;
+    
+}
+#Choose
+{
+    width: 470px;
+}
+.question
+{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.radio
+{
+    display: flex;
+    width: 15%;
+
+}
+.colortext{
+    color: rgb(230, 227, 227);
+}
