@@ -9,85 +9,109 @@
 </head>
 
 <body>
-    <div class="form">
-        <header class="cadretitre">
-            <h1 class="titre">EVENT REGISTRATION FORM</h1>
+    <form action="" method="post">
+        <header class="titre">
+            <h1>EVENT REGISTRATION FORM</h2>
         </header>
-        <div class=ensembleform>
-            <aside class="aside">
-                <span>Name</span>
-                <span>Compagny</span>
-                <span>Email</span>
-                <span>Phone</span>
-                <span>Subject</span>
-                
-
-            </aside>
-            <form class="formulaire">
-                <div class="label1">
-                    <div class="colonne"><input type="text" id="Name" required size="26">
-                        <label  class="colortext" for="Name" >First Name</label></div>
-                    <div class="colonne">
-                        <input type="text" id="Last_name" required size="26">
-                        <label class="colortext" for="Last_Name">Last Name</label></div>
-
-
-                </div>
-                <div class="label2">
-
-                    <input type="text" id="Compagny" required size="57">
-                </div>
-                <div class="label3">
-
-                    <input type="text" id="Email" required size="57">
-                </div>
-                <div class="label4">
-                    <div class="colonne">
-                        <input type="text" id="Area_Code" required size="10">
-                        <label class="colortext" for="Area_Code">Area Code</label>
+        <div class="margecadre2">
+            <div class="label1">
+                <span class="labelmilieu">Name</span>
+                <div class="labeldouble">
+                    <div class="label1_1">
+                        <input type="text" name="Name" id="Name" required pattern="[A-Za-z' -]+">
+                        <label class="text_label" for="Name">First Name</label>
                     </div>
-                    <div class="colonne">
-                        <input type="text" id="Phone_Number" required size="37">
-                        <label class="colortext" for="Phone_Number">Phone Number</label>
+                    <div class="label1_1">
+                        <input type="text" name="Last_Name" id="Last_Name" required pattern="[A-Za-z' -]+">
+                        <label class="text_label" id="marginl" for="Last Name">Last Name</label>
                     </div>
                 </div>
-                <div class="label5">
-
-                    
-
-                    <select name="Choose" id="Choose">
-                        <option value="">Choose option</option>
-                        
-                    </select>
-
-
-                    </select>
-
-                </div>
-            </form>
+            </div>
         </div>
-        <div class="question">
-            <span>Are you an existing customer?</span>
-            <div class="bouton">
-                <div class="radio">
-                    <input type="radio" id="first" name="choice"></input>
+        <div class="margecadre">
+            <div class="label1">
+                <label class="labelmilieu2" for="Compagny">Compagny</label>
+
+                <input type="text" name="Compagny" id="Compagny" required pattern="[a-zA-Z0-9\s]+">
+
+
+            </div>
+        </div>
+        <div class="margecadre">
+            <div class="label1">
+                <label class="labelmilieu2" for="toto">Email</label>
+
+                <input type="email" name="" id="toto" required
+                    pattern="[A-Za-z0-9](([.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*).([A-Za-z]{2,})">
+
+            </div>
+        </div>
+
+        <div class="margecadre2">
+            <div class="label1">
+                <span class="labelmilieu">Phone</span>
+                <div class="labeldouble">
+                    <div class="label1_1">
+                        <input type="tel" name="Area_Code" id="Area_Code" required pattern="[0-9]+" minlength="4"
+                            maxlength="4">
+                        <label class="text_label" for="Area_Code">Area Code</label>
+                    </div>
+                    <div class="label1_1">
+                        <input type="tel" name="Phone_Number" id="Phone_Number" required pattern="[0-9]+" minlength="6"
+                            maxlength="6">
+                        <label class="text_label" id="marginl2" for="Phone_Number">Phone Number</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="margecadre">
+            <div class="label1">
+                <label class="labelmilieu2" for="Subject">Subject</label>
+                <div class="labeldouble">
+
+
+                    <select name="Subject" id="Subject" required>
+                        <option value="">Choose option</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        <div class="margecadre">
+            <span class="question">Are you an existing customer?</span>
+            
+            <!--<div class="bouton">
+                <div class="Radio">
+                    <input type="radio" id="first" name="choice" class="demo6" required></input>
                     <label for="first">Yes</label>
                 </div>
 
-                <div class="radio">
-                    <input type="radio" id="second" name="choice"></input>
+                <div class="Radio">
+                    <input type="radio" id="second" name="choice" class="demo6" required></input>
                     <label for="second">No</label>
                 </div>
+            </div>-->
+            <div class="bouton">
+                <div class="Radio2"  id="espaceradio">
+                    <div class="Radio3"><input type="radio" id="premier" name="choice" required></input></div>
+                    <label for="premier" class="espaceg">Yes</label>
+                </div>
+    
+                <div class="Radio2">
+                    <div class="Radio3"><input type="radio" id="deuxieme" name="choice" ></input></div>
+                    <label for="deuxieme" class="espaceg">No</label>
+                </div>
             </div>
-            <div class="submit">
-                <p>REGISTER</p>
+            <div>
+
+                <input type="submit" class="registre" value="REGISTER">
             </div>
         </div>
-        
-
-    </div>
-
-
+     
+    </form>
 </body>
 
 </html>
